@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>من أنا — Notes Medcose</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--blue:#0b6fb8;--gold:#c9a34a;--muted:#6b7280}
+    body{font-family:'Cairo',sans-serif;margin:0;padding:0;background:#fbfdff;color:#072233}
+    .container{max-width:980px;margin:28px auto;padding:18px}
+    .card{background:#fff;padding:24px;border-radius:12px;box-shadow:0 12px 30px rgba(11,111,184,0.05)}
+    h1{margin-top:0}
+    .profile{
+      display:flex;gap:18px;align-items:center;
+    }
+    .avatar{
+      width:120px;height:120px;border-radius:12px;background:linear-gradient(135deg,var(--gold),#f7e3a3);
+      display:flex;align-items:center;justify-content:center;font-weight:700;font-size:28px;color:#fff;
+    }
+    a.tg{display:inline-block;margin-top:12px;padding:10px 14px;border-radius:10px;background:var(--gold);color:#072233;font-weight:700;text-decoration:none}
+    @media(max-width:700px){.profile{flex-direction:column;align-items:flex-start}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div style="margin-bottom:12px"><a href="index.html" style="text-decoration:none;color:#0b6fb8;font-weight:700">‹ العودة إلى الرئيسية</a></div>
+
+    <div class="card">
+      <div class="profile">
+        <div class="avatar">د.ع</div>
+        <div>
+          <h1>دكتور علي — مع دكتور حسن محمد</h1>
+          <p style="color:var(--muted);margin:6px 0 0 0">
+            نحن فريق تدريسي — د. علي (مقيم دوري) مع د. حسن محمد — هدفنا جعل الطب أسهل وأبسط لطلاب الطب.
+            نشارك ملاحظات مركزة، شروحات مبسطة، واختبارات تدريبية لتسهيل حفظ وفهم المناهج.
+          </p>
+
+          <a class="tg" href="https://t.me/notasmedicaskufa" target="_blank" rel="noopener">قناتنا على التليجرام</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

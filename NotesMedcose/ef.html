@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>لوحة التحكم — Notes Medcose (Mockup)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--gold:#c9a34a;--blue:#0b6fb8}
+    body{font-family:'Cairo',sans-serif;margin:0;background:#f5f9ff;color:#072233}
+    .wrap{display:flex;min-height:100vh}
+    aside{
+      width:260px;padding:20px;background:linear-gradient(180deg,#ffffff,#fdfaf6);box-shadow:8px 0 30px rgba(11,111,184,0.04)
+    }
+    main{flex:1;padding:24px}
+    .logo{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--gold),#e6c876);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+    nav a{display:block;margin-top:14px;color:#05293b;text-decoration:none;font-weight:600;padding:10px;border-radius:8px}
+    .panel{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:18px}
+    .stat{padding:16px;background:#fff;border-radius:12px;box-shadow:0 12px 30px rgba(11,111,184,0.04)}
+    table{width:100%;border-collapse:collapse;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 12px 30px rgba(11,111,184,0.04)}
+    th,td{padding:12px;text-align:right;border-bottom:1px solid #f1f7ff}
+    .actions{display:flex;gap:10px;justify-content:flex-end}
+    .btn{padding:10px 12px;border-radius:8px;text-decoration:none;color:#fff;background:var(--blue);font-weight:700}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <aside>
+      <div style="display:flex;gap:12px;align-items:center">
+        <div class="logo">NM</div>
+        <div>
+          <div style="font-weight:700">Notes Medcose</div>
+          <div style="font-size:12px;color:#6b7280">لوحة تحكم</div>
+        </div>
+      </div>
+
+      <nav style="margin-top:18px">
+        <a href="#">لوحة المعلومات</a>
+        <a href="#">الملاحظات</a>
+        <a href="#">فيديوهات</a>
+        <a href="#">المستخدمون</a>
+        <a href="#">إعدادات</a>
+      </nav>
+    </aside>
+
+    <main>
+      <h2 style="margin-top:0">مرحبًا د. علي — نظرة سريعة</h2>
+
+      <div class="panel">
+        <div class="stat">
+          <div style="font-size:22px;font-weight:700">124</div>
+          <div style="color:#6b7280;margin-top:6px">عدد الملخصات</div>
+        </div>
+        <div class="stat">
+          <div style="font-size:22px;font-weight:700">3.4k</div>
+          <div style="color:#6b7280;margin-top:6px">مشترك بالقناة</div>
+        </div>
+        <div class="stat">
+          <div style="font-size:22px;font-weight:700">28</div>
+          <div style="color:#6b7280;margin-top:6px">طلاب نشطين</div>
+        </div>
+      </div>
+
+      <div style="margin-bottom:12px;display:flex;justify-content:space-between;align-items:center">
+        <h3 style="margin:0">قائمة الملخصات</h3>
+        <div class="actions">
+          <button class="btn" onclick="alert('إضافة درس — هذه واجهة تجريبية.')">إضافة ملخص جديد</button>
+        </div>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>عنوان الملخص</th>
+            <th>الفصل</th>
+            <th>تاريخ النشر</th>
+            <th>إجراءات</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>فسيولوجيا الجهاز التنفسي</td>
+            <td>جهاز التنفسي</td>
+            <td>2025-11-12</td>
+            <td>
+              <button onclick="alert('تحرير')" style="margin-left:8px">✎</button>
+              <button onclick="alert('حذف')">🗑</button>
+            </td>
+          </tr>
+          <tr>
+            <td>أمراض القلب — نقاط هامة</td>
+            <td>قلب</td>
+            <td>2025-10-01</td>
+            <td>
+              <button onclick="alert('تحرير')" style="margin-left:8px">✎</button>
+              <button onclick="alert('حذف')">🗑</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </div>
+</body>
+</html>

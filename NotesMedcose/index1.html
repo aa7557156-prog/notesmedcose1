@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Notes Medcose — الرئيسية</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --blue:#0b6fb8;
+      --gold:#c9a34a;
+      --white:#ffffff;
+      --bg:#f7fbff;
+      --card:#ffffff;
+      --muted:#6b7280;
+      --radius:14px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:'Cairo', sans-serif;
+      background:linear-gradient(180deg,#f8fbff 0%, #ffffff 40%);
+      color:#0f1724;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.6;
+    }
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:18px 28px;
+      background:transparent;
+    }
+    .brand{
+      display:flex;
+      gap:12px;
+      align-items:center;
+    }
+    .logo{
+      width:54px;
+      height:54px;
+      border-radius:12px;
+      background:linear-gradient(135deg,var(--gold),#e6c876);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:var(--white);
+      font-weight:700;
+      box-shadow:0 6px 20px rgba(201,163,74,0.18);
+      font-size:18px;
+    }
+    nav a{
+      margin-left:16px;
+      text-decoration:none;
+      color:#0b3b5a;
+      font-weight:600;
+    }
+    .hero{
+      display:grid;
+      grid-template-columns: 1fr 460px;
+      gap:28px;
+      align-items:center;
+      padding:48px 6%;
+    }
+    .hero-card{
+      background:linear-gradient(180deg,var(--card),#fefcf8);
+      border-radius:18px;
+      padding:36px;
+      box-shadow:0 20px 40px rgba(11,111,184,0.06);
+    }
+    h1{
+      margin:0 0 12px 0;
+      font-size:34px;
+      color:#05293b;
+      line-height:1.05;
+    }
+    p.lead{
+      color:var(--muted);
+      margin:0 0 22px 0;
+      font-size:17px;
+    }
+    .cta-row{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{
+      display:inline-block;
+      padding:12px 18px;
+      border-radius:10px;
+      text-decoration:none;
+      font-weight:700;
+      cursor:pointer;
+    }
+    .btn-primary{
+      background:linear-gradient(90deg,var(--blue),#0a84c6);
+      color:#fff;
+      box-shadow:0 10px 24px rgba(11,111,184,0.18);
+    }
+    .btn-telegram{
+      background:transparent;
+      border:2px solid var(--gold);
+      color:var(--gold);
+    }
+    .features{
+      display:flex;
+      gap:14px;
+      margin-top:20px;
+      flex-wrap:wrap;
+    }
+    .feature{
+      background:rgba(11,111,184,0.04);
+      padding:12px 14px;
+      border-radius:10px;
+      color:#034a6f;
+      font-weight:600;
+      font-size:14px;
+    }
+    /* hero illustration */
+    .illus{
+      background:linear-gradient(180deg,#ffffff, #f3f8ff);
+      border-radius:18px;
+      padding:18px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      box-shadow:0 18px 40px rgba(11,111,184,0.06);
+    }
+    /* sections */
+    main{padding:28px 6%}
+    .section{
+      margin-top:28px;
+    }
+    .notes-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:18px;
+    }
+    .note{
+      padding:16px;
+      background:var(--card);
+      border-radius:12px;
+      box-shadow:0 8px 20px rgba(11,111,184,0.04);
+    }
+    footer{
+      padding:22px 6%;
+      color:var(--muted);
+      font-size:14px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+    @media (max-width:880px){
+      .hero{grid-template-columns:1fr; padding:28px 6%}
+      nav{display:none}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo">NM</div>
+      <div>
+        <div style="font-weight:700;color:#05293b">Notes Medcose</div>
+        <div style="font-size:13px;color:var(--muted)">ملاحظات طبية مبسطة للطلاب</div>
+      </div>
+    </div>
+
+    <nav>
+      <a href="index.html">الرئيسية</a>
+      <a href="about.html">من أنا</a>
+      <a href="login.html">تسجيل الدخول</a>
+      <a href="contact.html">تواصل</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-card">
+      <h1>ملاحظات طبية مبسطة — Notes Medcose</h1>
+      <p class="lead">محتوى مبسّط، أمثلة عملية وملحقات تُسهل حفظ وفهم المناهج. انضم إلى قناة التليجرام للمزيد من الدروس والملاحظات.</p>
+
+      <div class="cta-row">
+        <a class="btn btn-primary" href="login.html">دخول الطلاب</a>
+        <a class="btn btn-telegram" href="https://t.me/notasmedicaskufa" target="_blank" rel="noopener">انضم إلى قناة التليجرام</a>
+      </div>
+
+      <div class="features" aria-hidden="true">
+        <div class="feature">ملخصات قابلة للطباعة</div>
+        <div class="feature">شروحات مبسطة</div>
+        <div class="feature">أسئلة نموذجية</div>
+      </div>
+    </div>
+
+    <div class="illus" aria-hidden="true">
+      <!-- Simple medical SVG illustration -->
+      <svg width="420" height="320" viewBox="0 0 420 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="420" height="320" rx="18" fill="#fff"/>
+        <g transform="translate(40,18)">
+          <ellipse cx="170" cy="210" rx="120" ry="70" fill="#e8f4ff"/>
+          <g transform="translate(40,18)">
+            <rect x="30" y="18" width="170" height="120" rx="12" fill="#fff" stroke="#dfeeff"/>
+            <path d="M50 60h120" stroke="#0b6fb8" stroke-width="6" stroke-linecap="round"/>
+            <circle cx="95" cy="40" r="14" fill="#ffdca1" stroke="#c9a34a"/>
+            <path d="M120 110c10-12 22-22 36-28" stroke="#0a84c6" stroke-width="6" stroke-linecap="round"/>
+          </g>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <main>
+    <div class="section">
+      <h2 style="margin:0 0 12px 0;color:#05293b">أحدث الملخصات</h2>
+      <div class="notes-grid">
+        <article class="note">
+          <h3 style="margin-top:0">ملخص فسيولوجيا الجهاز التنفسي</h3>
+          <p style="margin:8px 0;color:var(--muted)">ملاحظة قصيرة تشرح آلية التنفّس وتبادل الغازات.</p>
+        </article>
+
+        <article class="note">
+          <h3 style="margin-top:0">أمراض القلب: نقاط هامة</h3>
+          <p style="margin:8px 0;color:var(--muted)">علامات، تشخيص مبدئي وخطة علاجية مختصرة.</p>
+        </article>
+
+        <article class="note">
+          <h3 style="margin-top:0">قواعد الأدوية العامة</h3>
+          <p style="margin:8px 0;color:var(--muted)">ملاحظات عن مضادات الالتهاب ومسائل التداخل الدوائي.</p>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div>© Notes Medcose — Dr. Ali & Dr. Hassan</div>
+    <div><a href="https://t.me/notasmedicaskufa" style="color:var(--gold);text-decoration:none">قناة التليجرام</a></div>
+  </footer>
+</body>
+</html>
